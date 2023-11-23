@@ -1,0 +1,43 @@
+# Простой рабочий процесс для развертывания статического контента на страницах GitHub.
+name: Deploy static content to Pages
+
+on:
+  # Запускается при push-уведомлениях с таргетингом на ветку по умолчанию.
+  push:
+    branches: ["main"]
+
+  # Позволяет запускать этот рабочий процесс вручную на вкладке «Действия».
+  workflow_dispatch:
+
+# Устанавливает разрешения GITHUB_TOKEN, чтобы разрешить развертывание на страницах GitHub вручную на вкладке «Действия».
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Разрешить только одно одновременное развертывание, пропуская запуски, поставленные в очередь между выполняемым запуском и последним запуском в очереди.
+# Однако НЕ отменяйте текущие запуски, поскольку мы хотим, чтобы эти производственные развертывания завершились.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Одно задание по развертыванию, поскольку мы просто развертываем
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # Загрузить весь репозиторий
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
