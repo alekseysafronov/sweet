@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+</head>
+
+<style>
+    body {
+    /* background-color: aqua;} */
+    background-image: url(../sweety/assets/img/patterns/p1.avif);
+    .container {
+        margin: auto;
+        background-color: white;
+        opacity: 0.9;
+        display: flex;
+        width: 90vw;
+        height: 97vh;
+        justify-content: center;
+        align-items: center;
+        border: slategray 4px solid;
+        margin-bottom: 20px;}
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        font-size: xx-large;
+        font-weight: 700;
+        margin: 20px;    }
+    #one {
+        background-color: red;}
+    #two {
+        background-color: blue;}
+    #three {
+        background-color: green;}
+
+#left {
+    background-color: red;
+    width: 50%;
+    height: 100%;
+    /* opacity: 0.9; */
+}
+#right {
+    background-color: blue;
+    width: 50%;
+    height: 100%;
+    /* opacity: 0.9; */
+}
+
+#left, #right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left_content {
+    padding: 20px;
+    /* margin: auto; */
+    /* height: 40%; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+#right__img {
+    width: 90%;
+    height: 50%;
+    border: rgb(255, 255, 255) 4px solid;
+    background-image: url(../sweety/assets/img/patterns/p2.avif);
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="one">1</div>
+        <div class="box" id="two">2</div>
+        <div class="box" id="three">3</div>
+    </div>
+
+    <div class="container l-r">
+        <div class="polovina" id="left">
+            <div id="left_content">
+                <h2>Header</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita omnis, harum aliquam nihil repellendus veritatis alias, dolorum id corporis, nam vitae non quam corrupti impedit sed. Quae obcaecati recusandae suscipit!</p>
+                <button>Click me</button>
+            </div>
+        </div>
+        <div class="polovina" id="right">
+            <!-- <img src="../sweety/assets/img/patterns/p2.avif" alt=""> так вылазит -->
+            <div id="right__img">KARTINKA</div>
+            <!-- Два нижних слэша в названии класса потому что если использовать один и Эммет, он добавляет контент вместо названия класса -->
+        </div>
+    </div>
+</body>
+</html>

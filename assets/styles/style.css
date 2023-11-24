@@ -1,3 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Rubik+Moonrocks&display=swap');
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy/Gilroy-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /* font-family: 'Arial', sans-serif; */
+    font-family: 'Gilroy', sans-serif;
+    padding: 0;
+    /* background-color: bisque; */
+}
+
+
+h1, h2, h3 {
+        /* font-family: 'Comforter', cursive; */
+    font-family: 'Gilroy', sans-serif;
+}
+
 h1 {
-    font-size: 60px;
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+.container {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+
+}
+
+header nav ul li {
+    display: inline;
+    font-size: large;
+
+}
+
+header nav ul li a {
+    color: rgb(91, 25, 25);
+    padding: 10px;
+}
+
+header button {
+    background-color: red;
+    color: white;
+    border: black 2px solid;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* BANNER */
+
+.banner {
+    background-image: url('../img/backs/top-view-from-afar-sweets-cinnamon-cupcakes-cookies-citrus-fruits-star-anise.jpg');
+    background-position: center center;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.banner .content {
+    margin: auto;
+    font-size: xx-large;
+    color: black;
+    border : 5px double rgb(117, 90, 58);
+    padding: 10px;
+    background-color: bisque; 
+    filter: opacity(0.9);
+}
+
+/* ADVANTAGES */
+
+.advantages {
+    margin: -140px;
+}
+
+.advantages .content {
+    /* background-color: rgb(117, 90, 58); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.advantages .content .advantage {
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    max-width: 150px;
+}
+
+.advantage {
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.847);
+    padding: 15px;
+    /* box-shadow: 0px 0px 50px rgba(255, 0, 0, 0.5); */
+}
+
+.advantage:hover {
+    /* box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5); */
+}
+
+
+/* SELECT */
+
+
+
+.select {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: rgb(117, 90, 58, 0.5) */
+}
+
+.select .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+
+.select h2 {
+    text-align: center;
+}
+
+.select_caces {
+    display: flex;
+
+}
+
+.select_cake {
+    /* margin-right: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+    
+.select_cake img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.select_cake a {
+    margin: 0px;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+
+    background-color: red;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    justify-content: space-around;
+}
+
+/* ABOUT */
+
+.about {
+    background-image: url('../img/backs/front-view-view-tasty-cupcake-with-strawberry-cream.jpg');
+    background-position: center center;
+    background-size: cover;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: bisque; */
+    /* text-align: center; */
+    
+}
+
+.about_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(117, 90, 58, 0.5);
+    min-height: 800px;
+
+}
+
+.about_wrap h2 {
+    color: white;
+}
+
+.about_text {
+    font-size: large;
+    font-weight: 100;
+    color: white;
+
+}
+
+/* REVIEWS */
+
+.reviews .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.review_text {
+    display: flex;
+}
+
+#naoborot {
+    /* flex-direction: row-reverse; */
+}
+
+.review_text img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.review_text blockquote {
+   border: 2px solid black;
+   /* background-color: aqua; */
+   /* margin: 0.5rem;
+   padding: 0.5rem; */
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   /* vertical-align: baseline; */
+   /* vertical-align: middle; */
+   /* margin: auto; */
+   padding: 40px;
+   font-size: x-large;
+
+
+}
+
+.review {
+    display: flex;
+}
+
+/* FEEDBACK */
+
+.feedback, .feedback h3 {
+    color: white;
+}
+
+.feedback input {
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    background: transparent;
+    border: white 2px solid;
+    color: white;
+
+}
+
+#download {
+    border: 0;
+    /* background-color: aqua; */
+}
+
+#personal {
+    width: 5%;
+}
+
+#feedback > div > form > div.form_submit > input[type=submit]:nth-child(3) {
+    width: 100%;
+    background-color: antiquewhite;
+    color: black;
+    font-size: xx-large;
+}
+}
+
+.feedback input::placeholder {
+    color: white;
+}
+
+.feedback input:active {
+    border: wheat 2px solid;
+}
+
+.feedback .content {
+    /* background-color: bisque; */
+    background-image: url('../img/backs/call.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback a {
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+
+}
+
+.feedback h2 {
+    font-size: xx-large;
+
+}
+
+/* MAP */
+
+/* .map {
+    position: relative;
+} */
+
+.map {
+    background: 
+    url(../img/patterns/p1.avif),
+    /* red; */
+    rgba(255, 255, 255, 0.883);
+    /* linear-gradient(#00A8DE, #FFF) fixed; */
+    /* background-image: url(../img/patterns/p1.avif); */
+     /* Режим наложения */
+    /* background-blend-mode: luminosity; */
+    background-blend-mode: screen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.map .content {
+    /* background-color: rgb(89, 89, 89); */
+}
+
+.map iframe {
+    border: gray 2px solid;
+
+}
+
+.map h2 {
+    font-size: 40px;
+}
+
+/* .map::after {
+    background-color: white;
+    opacity: 0.6;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(26 23 19);
+    color: rgb(190, 190, 190);
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.footer_main {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav ul li {
+    font-size: large;
+}
+
+.footer_add {
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+
+.footer_social a {
+    padding: 10px;
+    /* margin: auto;
+    text-align: center; */
+}
+
+
+
+/* Страница Начинки */
+
+section.filling-section .content{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+}
+
+section.filling-section .content h2 {
+    width: 100%;
+    text-align: center;
 }
