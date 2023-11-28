@@ -303,45 +303,35 @@ input[type=checkbox]:checked:after {
     top: -6px;
     left: 17px;
 }
-
 input[type=submit] {
     cursor: pointer;
    
 }
-
 input::placeholder {
     font-weight: lighter;
     opacity: 1;
     color: rgb(255, 235, 210);
     font-size: large;
   }
-
 input[type=file] {
 	/* box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); */
     margin: 0;
     padding: 0px 0;
     display: inline-block;
 }
-
-
-
 .form_contact {
     color: white;
 
 }
-
 .form_contact input {
     margin: 0;
 }
-
 .form_download {
     margin-left: 10px;
 }
-
 .feedback, .feedback h3 {
     color: white;
 }
-
 .feedback input {
     width: 100%;
     margin: 10px;
@@ -351,33 +341,26 @@ input[type=file] {
     color: white;
 
 }
-
 #download {
     border: 0;
     padding-left: 0;
     margin-left: 0;
 }
-
 #personal {
     width: 5%;
 }
-
 #feedback > div > form > div.form_submit > input[type=submit]:nth-child(3) {
     width: 100%;
     background-color: antiquewhite;
     color: black;
     font-size: xx-large;
 }
-
-
 .feedback input::placeholder {
     color: white;
 }
-
 .feedback input:active {
     border: wheat 2px solid;
 }
-
 .feedback .content {
     /* background-color: bisque; */
     background-image: url('../img/backs/call.jpeg');
@@ -390,19 +373,21 @@ input[type=file] {
     align-items: center;
     justify-content: center;
 }
-
 .feedback a {
     font-size: x-large;
     text-decoration: none;
     color: black;
 
 }
-
 .feedback h2 {
     font-size: xx-large;
 
 }
-
+#feedback > div > a > h3 {
+    color: rgb(231, 150, 0);
+    font-size: 42px;
+    margin: 5px auto;
+}
 
 /* #endregion */
 
