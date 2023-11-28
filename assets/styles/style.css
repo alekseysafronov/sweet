@@ -1,3 +1,7 @@
+/* * {
+    box-sizing: border-box;
+} */
+
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Rubik+Moonrocks&display=swap');
 
 
@@ -45,10 +49,20 @@ a {
     text-decoration: none;
 }
 
-/* HEADER */
+/* #region HEADER */
+/* header {
+    position: relative;
+}
+
+header nav {
+    position: sticky;
+    top: 10px;
+} */
+
 header nav {
     display: flex;
     justify-content: space-around;
+
 }
 
 header nav ul {
@@ -76,7 +90,9 @@ header button {
     cursor: pointer;
 }
 
-/* BANNER */
+/* #endregion */
+
+/* #region BANNER */
 
 .banner {
     background-image: url('../img/backs/top-view-from-afar-sweets-cinnamon-cupcakes-cookies-citrus-fruits-star-anise.jpg');
@@ -99,7 +115,9 @@ header button {
     filter: opacity(0.9);
 }
 
-/* ADVANTAGES */
+/* #endregion */
+
+/* #region ADVANTAGES */
 
 .advantages {
     margin: -140px;
@@ -132,8 +150,9 @@ header button {
     /* box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5); */
 }
 
+/* #endregion */
 
-/* SELECT */
+/* #region SELECT */
 
 
 
@@ -196,7 +215,9 @@ header button {
     justify-content: space-around;
 }
 
-/* ABOUT */
+/* #endregion */
+
+/* #region ABOUT */
 
 .about {
     background-image: url('../img/backs/front-view-view-tasty-cupcake-with-strawberry-cream.jpg');
@@ -232,8 +253,9 @@ header button {
     color: white;
 
 }
+/* #endregion */
 
-/* REVIEWS */
+/* #region REVIEWS */
 
 .reviews .content {
     display: flex;
@@ -277,7 +299,71 @@ header button {
     display: flex;
 }
 
-/* FEEDBACK */
+/* #endregion */
+
+/* #region FEEDBACK */
+
+input[type=checkbox] {
+    position: relative;
+      cursor: pointer;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+    left: 10px;
+    top: -5px;
+    background-color:#ffffff;
+}
+input[type=checkbox]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+    background-color:#ef3d1e;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -6px;
+    left: 17px;
+}
+
+input[type=submit] {
+    cursor: pointer;
+   
+}
+
+input::placeholder {
+    font-weight: lighter;
+    opacity: 1;
+    color: rgb(255, 235, 210);
+    font-size: large;
+  }
+
+input[type=file] {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    padding: 10px 0;
+    display: inline-block;
+}
+
+
+.form_contact {
+    color: white;
+}
 
 .feedback, .feedback h3 {
     color: white;
@@ -343,11 +429,11 @@ header button {
 
 }
 
-/* MAP */
 
-/* .map {
-    position: relative;
-} */
+/* #endregion */
+
+/* #region MAP */
+
 
 .map {
     background: 
@@ -389,7 +475,10 @@ header button {
     height: 100%;
 } */
 
-/* FOOTER */
+
+/* #endregion */
+
+/* #region FOOTER */
 
 footer {
     background-color: rgb(26 23 19);
@@ -424,7 +513,7 @@ footer nav ul li {
     text-align: center; */
 }
 
-
+/* #endregion */
 
 /* Страница Начинки */
 
