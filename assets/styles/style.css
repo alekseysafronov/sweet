@@ -1,4 +1,7 @@
 /* Свернуть всё vscode: Cmnd+K Cmnd+0 */
+
+/* #region НАЗВАНИЕ_СЕКЦИИ */   /* #endregion */
+
 /* #region MAIN */
 @font-face {
     font-family: 'Gilroy';
@@ -487,3 +490,43 @@ section.filling-section .content h2 {
 }
 
 /* #endregion */
+
+
+/* #region Страница Готовые торты */ 
+
+.cakes .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cake {
+    background-color: bisque;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    max-width: 400px;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 25px;
+}
+
+.cake img {
+max-width: 100%;
+}
+
+.cake a {
+    display: block;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: large;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 25px;
+    margin: 5px 20px;
+    max-width: 100%;
+    background-color: #ef3d1e;
+}
+
+/* #endregion */
+
+
