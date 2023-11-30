@@ -1,7 +1,5 @@
-/* * {
-    box-sizing: border-box;
-} */
-
+/* Свернуть всё vscode: Cmnd+K Cmnd+0 */
+/* #region MAIN */
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy/Gilroy-Light.otf');
@@ -29,7 +27,7 @@ a {
     max-width: 1200px;
     margin: auto;
 }
-
+/* #endregion */
 
 
 /* #region HEADER */
@@ -470,7 +468,8 @@ footer nav ul li {
 
 /* #endregion */
 
-/* Страница Начинки */
+
+/* #region Страница Начинки */
 
 section.filling-section .content{
     display: flex;
@@ -482,3 +481,9 @@ section.filling-section .content h2 {
     width: 100%;
     text-align: center;
 }
+
+.filling img {
+    border-radius: 50%;
+}
+
+/* #endregion */
