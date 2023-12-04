@@ -1,13 +1,15 @@
 /* Свернуть всё vscode: Cmnd+K Cmnd+0 */
-
 /* #region НАЗВАНИЕ_СЕКЦИИ */   /* #endregion */
-
 /* #region MAIN */
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy/Gilroy-Light.otf');
     font-weight: normal;
     font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -22,6 +24,12 @@ h3 {font-size: 24px;}
 
 a {
     text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+  
 }
 
 .container {
@@ -125,7 +133,7 @@ header button {
 
 .select {
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     min-height: 500px;
     display: flex;
     justify-content: center;
@@ -224,6 +232,11 @@ header button {
 
 /* #region REVIEWS */
 
+.reviews .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .reviews .content {
     display: flex;
     flex-direction: column;
@@ -266,7 +279,7 @@ header button {
 
 /* #region FEEDBACK */
 
-input[type=checkbox] {
+/* input[type=checkbox] {
     position: relative;
       cursor: pointer;
 }
@@ -303,7 +316,38 @@ input[type=checkbox]:checked:after {
     position: absolute;
     top: -6px;
     left: 17px;
+} */
+
+input[type=checkbox] {
+    appearance: none;
+    position: relative;
+    min-height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
 }
+
+input[type=checkbox]::before {
+    visibility: hidden;
+    position: absolute;
+    content: "\2714";
+    color: #fcfbfa;
+    font-size: 2.2rem;
+    left: 0;
+    top:-5px;
+}
+
+#feedback > div > form > div.form_submit > label {
+    top: -25px;
+    position: relative;
+}
+
+.feedback form .form_submit input[type="checkbox"]:checked::before {
+    visibility: visible;
+    top: 1px;
+    left: 5px;
+}
+
 input[type=submit] {
     cursor: pointer;
    
@@ -385,10 +429,25 @@ input[type=file] {
 
 }
 #feedback > div > a > h3 {
-    color: rgb(231, 150, 0);
+    color: rgb(255 227 176);
     font-size: 42px;
     margin: 5px auto;
 }
+
+
+.feedback form .form_download input[type='file'] {
+    display: none;
+}
+
+.feedback form .form_download label[for='download'] {
+    text-decoration: underline;
+    font-weight: 900;
+}
+.feedback form .form_download label[for='download']:hover {
+    cursor: pointer;
+}
+
+
 
 /* #endregion */
 
@@ -488,7 +547,19 @@ section.filling-section .content h2 {
 
 .filling img {
     border-radius: 50%;
+    margin-bottom: 1rem;
+    filter: sepia(60%);
 }
+
+.filling img:hover {
+    filter: sepia(0%);
+}
+
+.filling figcaption {
+    text-align: center;
+    font-size: larger;
+}
+
 
 /* #endregion */
 

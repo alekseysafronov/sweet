@@ -71,3 +71,28 @@
     }
 
 }
+
+/* #region НАЗВАНИЕ_СЕКЦИИ */   /* #endregion */
+
+@media (min-width: 768px) {
+    header a {font-size: 1,2rem;}
+    header img.logo {width: 8vw;}
+}
+
+@media (min-width:1024px) {
+    header a {font-size: 1.5rem;}
+    header img.logo {width:6vw}
+}
+
+@media (min-width: 1440px) {
+    header a {font-size: 2rem}
+    header .logo {width:4vw}
+}
+
+
+/* Edet verstka */
+@media (min-width:590px) {
+    .banner.first {min-height: 30vh;}
+    .banner h1 {font-size: 3rem;}
+    .banner h2 {font-size: 1.5rem;}
+}
